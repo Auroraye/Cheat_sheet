@@ -1,4 +1,5 @@
 # Basic Usage
+Math Symbol: https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols
 
 ### Bold
 `\textbf{}`
