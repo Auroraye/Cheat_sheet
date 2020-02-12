@@ -2,6 +2,12 @@
 
 ### Bold
 `\textbf{}`
+### Center
+```
+\begin{center}
+	......
+\end{center}
+```
 ### NFA / DFA
 ``` 
 \begin{tikzpicture}[auto, node distance=3cm, every loop/.style={},
@@ -26,4 +32,13 @@
 ### Text on the arrow 
 ```
 $$ q_0 \xrightarrow{1} q_1 $$
+```
+
+### Table 
+```
+\begin{tabular}{|l|l|l|}
+	\hline
+	state & 0 & 1   \\ \hline
+	A & B & C
+\end{tabular}
 ```
