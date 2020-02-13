@@ -9,6 +9,8 @@ Math Symbol: https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols
 	......
 \end{center}
 ```
+### New page
+`\newpage`
 ### NFA / DFA
 ``` 
 \begin{tikzpicture}[auto, node distance=3cm, every loop/.style={},
