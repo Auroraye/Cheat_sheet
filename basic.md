@@ -3,6 +3,15 @@ Math Symbol: https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols
 
 ### Bold
 `\textbf{}`
+### Empty space 
+`\`
+### { with multi-lines
+```
+$$\begin{cases}
+	A &= B\\
+        B &= C
+\end{cases}$$
+```
 ### Center
 ```
 \begin{center}
