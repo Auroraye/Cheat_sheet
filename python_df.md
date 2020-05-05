@@ -17,11 +17,21 @@ df.loc[df['A'] == e]
 ```
 df.loc[df['A'].isin(value_list)]
 ```
-
+- Get the whole row when Col user == '2014':
+```
+df.loc[df['user'] == '2014']
+```
 
 
 ### Change Value
 - Replace all NaN with 0 and non-NaN with:
 ```
 newdf = df.notnull().astype('int')
+```
+
+### Groupby
+will return groupby object fter groupby
+- flatten the df: 
+```
+df.reset_index()
 ```
