@@ -24,6 +24,10 @@ df.loc[df['user'] == '2014']
 
 
 ### Change Value
+- Change Column Name:
+```
+flattened_df.rename(columns={'coloc_user':'user'}, inplace=True)
+```
 - Replace all NaN with 0 and non-NaN with:
 ```
 newdf = df.notnull().astype('int')
