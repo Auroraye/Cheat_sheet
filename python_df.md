@@ -32,10 +32,7 @@ flattened_df.rename(columns={'coloc_user':'user'}, inplace=True)
 ```py
 newdf = df.notnull().astype('int')
 ```
-- Dr
 
-result = result.rename(columns={"true_id": true_key})
-    result = result.drop(columns=['building_id', 'ap_id'])
 ### Groupby
 will return groupby object fter groupby
 - flatten the df: 
