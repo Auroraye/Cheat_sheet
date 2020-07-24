@@ -52,3 +52,12 @@ def build_dwell_graph(row):   # for dwelling data
     sem_loc = row.sem_loc
     B.add_edge(row.user, sem_loc, start_t=start_time, end_t=end_time, dur=dur_min)
 ```
+assign value:
+```py
+sub_df['duration_minutes'] = sub_df.apply(lambda row: compute_duration(row), axis = 1)
+
+def compute_duration(row):
+    start_time = row.start_time
+    end_time = row.end_time
+    return ((end_time-start_time)/np.timedelta64(1,'s'))/60
+```
