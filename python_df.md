@@ -61,3 +61,10 @@ def compute_duration(row):
     end_time = row.end_time
     return ((end_time-start_time)/np.timedelta64(1,'s'))/60
 ```
+iterate through rows
+```py
+for index, row in df.iterrows():
+    print(row['c1'], row['c2'])
+```
+### Time
+Cover String to Datetime [link](https://stackabuse.com/converting-strings-to-datetime-in-python/)
