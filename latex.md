@@ -18,6 +18,10 @@ $$\begin{cases}
 	......
 \end{center}
 ```
+OR 
+```
+\centering
+```
 ### New page
 `\newpage`
 ### NFA / DFA
@@ -47,10 +51,29 @@ $$ q_0 \xrightarrow{1} q_1 $$
 ```
 
 ### Table 
+NOTE: ADD `[h]` to avoid table at top of the page
 ```
 \begin{tabular}{|l|l|l|}
 	\hline
 	state & 0 & 1   \\ \hline
 	A & B & C
 \end{tabular}
+```
+```
+\begin{table}[h]
+  \caption{Timeline}
+  \label{sample-table}
+  \centering
+  \begin{tabular}{lll}
+    \toprule
+    Date     & Goal     & Note \\
+    \midrule
+    Oct 5  - Oct 14 & Establish a collection of papers &   \\
+    Oct 15 - Oct 21 & Describe in-depth background information &   \\
+    Oct 22 - Oct 28 & Finish individual assigned work &   \\
+    Oct 29 - Nov 4 & Finish the draft and review &   \\
+    Nov 5  - Nov 11 & Ready for submission &   \\
+    \bottomrule
+  \end{tabular}
+\end{table}
 ```
